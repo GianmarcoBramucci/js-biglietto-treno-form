@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./js/ticket.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="nameSurname" class="form-label">nome e cognome</label>
+        <input type="nameSurname" class="form-control" id="inputGeneric">
+      </div>
+      <div class="col-md-6">
+        <label for="distance" class="form-label">kilometri</label>
+        <input type="distance" class="form-control" id="distance">
+      </div>
+  
+      <div class="col-md-4">
+        <label for="age" class="form-label">età</label>
+        <select id="age" class="form-select">
+          <option selected="">maggiorenne</option>
+          <option>minorenne</option>
+          <option>penzionato</option>
+        </select>
+      </div>
+      
+      <div class="col-12">
+        <button type="submit" class="" id="generete">Compra</button>
+      </div>
+    </form>
+    
+  </body>
+</html>
