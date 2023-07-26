@@ -1,4 +1,4 @@
-let numeroKilometri = document.getElementById('distance');
+const numeroKilometri = document.getElementById('distance');
 let eta = document.getElementById('age');
 let prezzoBiglietto;
 const scontoMinorenni=20;
@@ -10,12 +10,13 @@ const nomeCognome= document.getElementById('inputGeneric')
 
 function genereteTiket(event)
 {
-    prezzoBiglietto=numeroKilometri.innerHTML*prezzoKilometri;
-    if(eta.innerHTML=='maggiorenne')
+    prezzoBiglietto=numeroKilometri.value*prezzoKilometri;
+    alert(prezzoBiglietto)
+    if(eta.value=='maggiorenne')
         {
         alert(prezzoBiglietto.toFixed(2))
         }
-    else if(eta.innerHTML=='penzionato')
+    else if(eta.value=='pensionato')
         {
         prezzoBiglietto=(prezzoBiglietto*scontoPenzionati)/100;
         alert("pensionati" + prezzoBiglietto.toFixed(2))
@@ -27,3 +28,7 @@ function genereteTiket(event)
         }
 }
 btn.addEventListener('click', genereteTiket);
+
+
+
+    
