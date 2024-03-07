@@ -15,13 +15,8 @@
             <!-- prendo gli input -->
             <form class="row gx-3 gy-2 align-items-center justify-content-center mt-5">
                 <div class="col-sm-3">
-                    <!-- chiedo il nome -->
-                  <label class="" for="specificSizeInputName">Nome</label>
-                  <input type="text" class="form-control" id="specificSizeInputName">
-                </div>
-                <div class="col-sm-3">
-                    <!-- chiedo il Cognome -->
-                  <label class="" for="specificSizeInputGroupUsername">Cognome</label>
+                    <!-- chiedo i kilometri -->
+                  <label class="" for="specificSizeInputGroupUsername">kilometri da percorere</label>
                   <div class="input-group">
                     <input type="text" class="form-control" id="specificSizeInputGroupUsername">
                   </div>
@@ -30,9 +25,10 @@
                     <!-- prendo l'eta' -->
                   <label class="" for="specificSizeSelect">eta'</label>
                   <select class="form-select" id="specificSizeSelect">
-                    <option selected>Nessuna delle due</option>
-                    <option value="1">Minorenne</option>
-                    <option value="2">Over 65</option>
+                    <option selected>...</option>
+                    <option value="18">Minorenne</option>
+                    <option value="65">Over 65</option>
+                    <option value="37">Nessuna delle due</option>
                   </select>
                 </div>
               </form>
@@ -40,17 +36,20 @@
               <div class="row gx-3 gy-2 align-items-center justify-content-center mt-4">
                 <div class="col-auto">
                     <!-- bottone per mandare i dati -->
-                    <button type="submit" class="btn btn-primary">compra</button>
+                    <button type="submit" class="btn btn-primary" id="btn-submit73">compra</button>
                   </div>
                   <div class="col-auto">
                     <!-- bottone per il reset -->
-                    <button type="submit" class="btn btn-primary">Annulla</button>
+                    <button type="submit" class="btn btn-primary" id="btn-rest73">Annulla</button>
                   </div>
               </div>
         </div>
 
         <div>
             <!-- qui andra il biglietto -->
+            <div id="stampa">
+
+            </div>
         </div>    
     </main>
     
