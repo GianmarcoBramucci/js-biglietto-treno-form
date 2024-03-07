@@ -2,9 +2,7 @@ const teenAge = 18;
 const oldAge = 65;
 const scontoTeen = 20;
 const scontoOld = 40;
-const priceKm = 0.21;
-let scontoRealTeen = scontoTeen / 100;
-let scontoRealOld = scontoOld / 100;
+const priceKm = 0.21; 
 let userAge;
 let userKm; 
 let finalPrice;
@@ -19,10 +17,15 @@ userAge = document.getElementById('specificSizeSelect');
 userKm = document.getElementById('specificSizeInputGroupUsername');
 
 btnSubit.addEventListener('click', function(){
-let tempUserAge = parseInt(userAge.value);
-let TempUserKm = parseInt(userKm.value);
-let price;
-
+let tempUserAge = 0; 
+let TempUserKm = 0; 
+let price = 0;
+let scontoRealOld;
+let scontoRealTeen;
+TempUserKm= parseInt(userKm.value);
+tempUserAge= parseInt(userAge.value);
+scontoRealTeen = scontoTeen / 100;
+scontoRealOld = scontoOld / 100;
 if(!isNaN(tempUserAge) && !isNaN(TempUserKm)){
     price = TempUserKm * priceKm;
     if(tempUserAge === teenAge){
@@ -42,4 +45,5 @@ if(!isNaN(tempUserAge) && !isNaN(TempUserKm)){
 else{
     printPrice.innerHTML = `il prezzo non e valido perche hai inserito male i numeri`;
 }
+
 });
