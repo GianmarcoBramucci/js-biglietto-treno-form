@@ -39,6 +39,7 @@ let max = 0;
 let scontoRealOld;
 let scontoRealTeen;
 let message;
+let tempUserName 
 tempUserName = userName.value; 
 TempUserKm = parseInt(userKm.value);
 tempUserAge = parseInt(userAge.value);
